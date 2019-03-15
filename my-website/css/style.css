@@ -1,0 +1,119 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: 'Comfortaa', cursive;
+	/*font-family: 'B612 Mono', monospace;*/
+	font-size: 14px;
+	/*font-family: normal 16px 'Comfortaa', Arial, sans-serif;*/
+	background-color: grey;
+	background-image:url('../images/bg.jpg');
+/*sets bg image to @ 100vh - view heights 
+no matter what size the browser is resized to*/
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	background-repeat: no-repeat;
+	margin:0;
+	padding:0;
+}
+.wrapper{
+	width:95%;
+	padding: 0;
+	vertical-align: middle;
+	margin: auto;
+	box-sizing: border-box;
+	/*border: solid;
+	border-color: white;*/
+}
+.box{
+	margin: 0;
+	box-sizing: border-box;
+}
+.heading{
+	background-color: #888;
+	font-size: 22px;
+	font-weight: 900;
+	text-align: left;
+	box-sizing: border-box;
+	
+}
+.heading h1{
+	margin:5px;
+	padding:0;
+	color: #222;
+}
+.navBar{
+	background-color: #444;
+	padding: 20px 0 20px 0;
+	margin: auto;
+	font-weight:bold;
+	box-sizing: border-box;
+}
+.navBar	ul{
+	box-sizing: border-box;
+}
+.navBar li{
+	display: inline;
+	text-decoration: none;
+	color: #222;
+	padding: 0;
+	margin: 5px;
+}
+.navBar a{
+	margin: 0.2em;
+	align-items: left;
+	text-decoration: none;
+	color: #999;
+	background-color: #222;
+	text-transform: uppercase;
+	padding: 5px;
+}
+.navBar a:hover{
+	text-decoration: none;
+	color: #ccc;
+	text-transform:uppercase;
+}
+.mainSection{
+	background: #ccc;
+	background-color: antiquewhite;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.mainSection h2{
+	background: antiquewhite;
+	padding: 10px;
+	text-align: center;
+}
+.mainSection p{
+	padding: 5px;
+	margin: auto;
+	/*letter-spacing: 0.1em;*/
+	word-spacing: 0.2em;
+}
+.footerSection{
+	text-align: center;
+	background-color: #222;
+	color: #ccc;
+	padding: 10px;
+	align-items: left;
+	
+}
+.footerSection a{
+	color: #999;
+	background-color: #222;
+	padding: 10px;
+}
+/*
+.footerSection i{    
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+}8?

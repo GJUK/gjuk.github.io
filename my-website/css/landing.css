@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    line-height: 1.6;
+    /* sets a background image which will fill the screen and scale to 
+    the size of the window, the tesxt should be centered and a button 
+    to click which will link to the lesson.*/
+   
+}
+.landing{
+    /*image link*/
+    background-image:url('../images/landing.jpg');
+    /*sets image to 100vh, the amount of the page visisble see vh 
+    for reference to how it works*/
+    height: 100vh;
+    /*Resize the background image to cover the entire 
+    container, even if it has to stretch the image or 
+    cut a little bit off one of the edges*/
+    background-size: cover;
+    background-position: center;
+    font-size: 20px;
+    padding: 0;
+
+/* flexbox */
+    display: flex;
+    flex-direction: column;
+    /*Aligns flex items along the main axis of the 
+    current line of the flex container.*/
+    justify-content: center;
+    /*Centres the elements vertically*/
+    align-items: center;
+    /*padding top & bottom 0 - left & right 20pixels*/
+    /**/
+    text-align: center;
+    padding: 0 20px;
+}
+.landing h1{
+    font-size: 50px;
+    text-transform:uppercase;
+    color: #512F16;
+    line-height: 1.6;
+    font-weight: 900;
+
+}
+.landing p{
+    font-size: 20px;
+    color: #512F16;
+    padding-bottom: 15px;
+}
+/**
+ *
+ * Button styling and animation
+ *
+ */
+.landing .button{
+    font-size: 18px;
+    text-decoration: none;
+    color: #512F16;
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.landing .button:hover{
+    background-color: 	#EA8A34;
+    color: #512F16;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: translateY(2px);
+    opacity: 1;
+/* button animation - copied from https://codepen.io/sazzad/pen/yNNNJG */
+    -webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+/* taken from W3 schools  */
+/* https://www.w3schools.com/css/css3_buttons.asp */
+
+.landing .button:active{
+    text-decoration: none;
+    background-color: #512F16;
+    color: 	#EA8A34;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: 0.4;
+    -webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+}
+/* section 1 styling */
+.section1{
+    padding: 20px;
+    background-color: #512F16;
+    color: 	#EA8A34;
+    text-align: center; 
+}
+.section1 p{
+    padding-bottom: 25px;
+}
+.section2{
+    padding: 20px;
+    background-color: #e8f3d5;
+    color: #333;
+    text-align: center; 
+}
+.section2 p{
+    padding-bottom: 25px;
+}
+
+/**
+ *
+ * Had to put section 3 into a media query to get 
+ * it to collapse into rows if min width is 468px
+ *
+ */
+
+
+@media(min-width:468px){
+    .section3 {
+      display:flex;
+      /*
+      align-items:flex-start;
+      align-items:flex-end;
+      align-items:center;
+      
+      flex-direction:column;
+      */
+    }
+
+  }
+.section3 div {
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.section3 h2 {
+    text-align: center;
+}
+.section3 .box1, .section3 .box3 {
+    background-color: #512F16;
+    color: 	#EA8A34;
+} 
+.section3 .box2 {
+    background-color: #e8f3d5;
+    color: #333;
+}
+.section3 p {
+        padding-bottom: 25px;
+}
